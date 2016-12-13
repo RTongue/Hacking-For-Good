@@ -1,39 +1,140 @@
+input::-webkit-input-placeholder {
+  color: rgb(192, 192, 192) !important;
+}
+
 #mainMenu {
   width: 400px;
   height: 400px;
-  background-color: rgba(192, 192, 192, 0.8);
-  display: flex;
-  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#mainTitle {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 5.5%;
+  width: 100%;
+  color: white;
+  align-self: stretch;
+  padding: 0;
+  margin: 0;
+}
+
+#secondTitle {
+  position: absolute;
+  z-index: 2;
+  top: 16%;
+  left: 30%;
+  width: 100%;
+  color: white;
+  align-self: stretch;
+  padding: 0;
+  margin: 0;
 }
 
 #mainButton {
-  align-self: center;
+  position: absolute;
+  z-index: 1;
+  width: 15%;
+  top: 50%;
+  left: 41.5%;
+  cursor: pointer;
+}
+
+#mainButton:hover {
+  transform: scale(1.1);
 }
 
 #mainInput {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 5%;
   height: 20px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid white;
   outline: none;
-  color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   margin: 0;
   padding: 0;
-  align-self: center;
+  width: 30%;
+  animation-name: inputAnimationTwo;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+#mainInput:focus {
+  color: white;
+  animation-name: inputAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 
 #secondInput {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  right: 5%;
   height: 20px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid white;
   outline: none;
-  color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   margin: 0;
   padding: 0;
-  align-self: center;
+  width: 30%;
+  animation-name: inputAnimationTwo;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+#secondInput:focus {
+  color: white;
+  animation-name: inputAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes inputAnimation {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes inputAnimationTwo {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 30%;
+  }
 }
