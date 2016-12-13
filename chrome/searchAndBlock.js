@@ -12,7 +12,7 @@ function replaceWord(wordToLookFor, wordReplacement) {
   var badNodes = getNodesThatContain(wordToLookFor);
   badNodes.map($)
   .forEach(node => {
-    node[0].innerHTML = node[0].innerHTML.replace(wordToLookFor, '<span style="color: red">' + wordReplacement + '</span>');
+    node[0].innerHTML = node[0].innerHTML.replace(RegExp(wordToLookFor, "g"), '<span style="color: red">' + wordReplacement + '</span>');
   })
 }
 
