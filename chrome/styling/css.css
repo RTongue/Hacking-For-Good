@@ -1,5 +1,11 @@
 #mainMenu {
   width: 400px;
   height: 400px;
-  background-color: red;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+#mainButton {
+  align-self: center;
 }
