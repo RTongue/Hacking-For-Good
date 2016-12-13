@@ -10,10 +10,9 @@ function getNodesThatContain(text) {
 
 function replaceWord(wordToLookFor, wordReplacement) {
   var badNodes = getNodesThatContain(wordToLookFor);
-  // var re = new RegExp (wordToLookFor, 'i')
   badNodes.map($)
   .forEach(node => {
-    node[0].innerHTML = node[0].innerHTML.replace(RegExp(wordToLookFor, "g"), '<span style="color: red">' + wordReplacement + '</span>');
+    node[0].innerHTML = node[0].innerHTML.replace(RegExp(wordToLookFor, "gi"), '<span style="color: red">' + wordReplacement + '</span>');
   })
 }
 
