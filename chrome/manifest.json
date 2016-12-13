@@ -12,15 +12,12 @@
     "default_title": "Addiction Blocker",
     "default_popup": "app.html"
   },
-  "content_scripts": [{
-    "matches": ["*://*.stackoverflow.com/*"],
-    "js": ["content.js"]
-  }],
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "permissions": [
     "storage",
     "<all_urls>",
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
   "background": {
     "scripts": ["main.js"],
