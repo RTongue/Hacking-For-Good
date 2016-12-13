@@ -1,3 +1,5 @@
+
+
 function getNodesThatContain(text) {
   console.log("Are we getting inside GET NODES")
     var textNodes = $(document).find(":not(iframe, script)")
