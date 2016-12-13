@@ -14,6 +14,11 @@ function replaceWord(wordToLookFor, wordReplacement) {
   .forEach(node => {
     node[0].innerHTML = node[0].innerHTML.replace(wordToLookFor, '<span style="color: red">' + wordReplacement + '</span>');
   })
-};
+}
 
-replaceWord(firstWord, secondWord)
+console.log(wordDictionary);
+for (var key in wordDictionary) {
+  if (wordDictionary.hasOwnProperty(key)) {
+    replaceWord(key, wordDictionary[key]);
+  }
+}

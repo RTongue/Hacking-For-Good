@@ -19,9 +19,10 @@
     "activeTab",
     "tabs"
   ],
-  "background": {
-    "scripts": ["main.js"],
-    "persistent": false
-  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["main.js"],
+    "run_at": ["document_end"]
+  }],
   "manifest_version": 2
 }
