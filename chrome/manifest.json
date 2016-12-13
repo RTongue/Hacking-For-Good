@@ -1,0 +1,20 @@
+{
+  "name": "addictionblocker",
+  "description": "dismantling addictions",
+  "version": "1.0.0.0",
+  "incognito": "split",
+  "browser_action": {
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "24": "assets/icon24.png",
+      "32": "assets/icon32.png"
+    },
+    "default_title": "Addiction Blocker",
+    "default_popup": "app.html"
+  },
+  "permissions": [
+    "storage",
+    "<all_urls>"
+  ],
+  "manifest_version": 2
+}
